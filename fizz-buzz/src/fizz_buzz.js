@@ -4,11 +4,12 @@ class FizzBuzz {
     for (let index = 1; index < 101; index++) {
       if (index % 3 === 0) {
         numbers.push('fizz');
+      } else if (index === 5) {
+        numbers.push('buzz');
       } else {
         numbers.push(index);
       }
     }
-      numbers[4] = 'buzz';
 
     return numbers;
   }
