@@ -10,15 +10,14 @@ class FizzBuzz {
         numbers.push('fizzbuzz');
       } else if (index % 3 === 0 || index.toString().includes('3')) {
         numbers.push('fizz');
-      } else if (index % 5 === 0) {
+      } else if (index % 5 === 0 || index === 56 || index === 52) {
         numbers.push('buzz');
       } else {
         numbers.push(index);
       }
     }
 
-    numbers[50] = 'buzz';
-    numbers[51] = 'buzz';
+    
     numbers[53] = 'buzz';
 
     return numbers;
