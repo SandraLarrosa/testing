@@ -26,11 +26,11 @@ describe('FizzBuzz', function () {
     expect(numbers[3]).toBe(4);
   });
 
-  it('return a number 100', function () {
+  it('return an array of 100 numbers', function () {
     let fizzBuzz = new FizzBuzz(1, 100);
 
     let numbers = fizzBuzz.getNumbers();
 
-    expect(numbers[99]).toBe(100);
+    expect(numbers.length).toBe(100);
   });
 });
