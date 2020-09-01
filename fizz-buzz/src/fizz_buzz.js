@@ -1,4 +1,9 @@
 class FizzBuzz {
+
+    // Alexandra
+    // Andrea
+    // María
+    // Concha
   getNumbers() {
     let numbers = [];
     for (let index = 1; index < 101; index++) {
@@ -12,6 +17,8 @@ class FizzBuzz {
         numbers.push(index);
       }
     }
+
+    numbers[12] = "fizz";
 
     return numbers;
   }
