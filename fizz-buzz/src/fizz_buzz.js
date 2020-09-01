@@ -6,19 +6,21 @@ class FizzBuzz {
   getNumbers() {
     let numbers = [];
     for (let index = 1; index < 101; index++) {
+      let fizzValue = '';
       if (
         index % 15 === 0 ||
         (this.contain5(index) && this.contain3(index)) ||
         (index % 3 === 0 && this.contain5(index))
       ) {
-        numbers.push('fizzbuzz');
+        fizzValue = 'fizzbuzz';
       } else if (index % 5 === 0 || this.contain5(index)) {
-        numbers.push('buzz');
+        fizzValue = 'buzz';
       } else if (index % 3 === 0 || this.contain3(index)) {
-        numbers.push('fizz');
+        fizzValue = 'fizz';
       } else {
-        numbers.push(index);
+        fizzValue = index;
       }
+      numbers.push(fizzValue);
     }
 
     return numbers;
@@ -27,7 +29,7 @@ class FizzBuzz {
   contain5(index) {
     return index.toString().includes('5');
   }
-    
+
   contain3(index) {
     return index.toString().includes('3');
   }
