@@ -8,11 +8,11 @@ class FizzBuzz {
     for (let index = 1; index < 101; index++) {
       if (
         index % 15 === 0 ||
-        (index.toString().includes('5') && index.toString().includes('3')) ||
-        (index % 3 === 0 && index.toString().includes('5'))
+        (this.contain5(index) && index.toString().includes('3')) ||
+        (index % 3 === 0 && this.contain5(index))
       ) {
         numbers.push('fizzbuzz');
-      } else if (index % 5 === 0 || index.toString().includes('5')) {
+      } else if (index % 5 === 0 || this.contain5(index)) {
         numbers.push('buzz');
       } else if (index % 3 === 0 || index.toString().includes('3')) {
         numbers.push('fizz');
@@ -22,6 +22,10 @@ class FizzBuzz {
     }
 
     return numbers;
+  }
+
+  contain5(index) {
+    return index.toString().includes('5');
   }
 }
 
