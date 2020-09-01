@@ -147,4 +147,13 @@ describe('FizzBuzz', function () {
 
     expect(numbers[51]).toBe('buzz');
   });
+
+  it('return name buzz position 54', function () {
+    let fizzBuzz = new FizzBuzz(1, 100);
+
+    let numbers = fizzBuzz.getNumbers();
+
+    expect(numbers[53]).toBe('buzz');
+  });
+
 });
