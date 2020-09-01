@@ -2,12 +2,13 @@ class FizzBuzz {
   getNumbers() {
     let numbers = [];
     for (let index = 1; index < 101; index++) {
-      numbers.push(index);
+      if (index % 3 === 0) {
+        numbers.push('fizz');
+      } else {
+        numbers.push(index);
+      }
+      
     }
-
-    numbers[2] = "fizz";
-    numbers[5] = "fizz";
-    numbers[8] = "fizz";
 
     return numbers;
   }
