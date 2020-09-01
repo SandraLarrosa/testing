@@ -1,6 +1,6 @@
 class FizzBuzz {
   getNumbers() {
-    return [1, 2];
+    return [1, 2,0, 4];
   }
 }
 

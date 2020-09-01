@@ -16,4 +16,13 @@ describe('FizzBuzz', function () {
 
     expect(numbers[1]).toBe(2);
   });
+
+
+  it('return a number 4', function () {
+    let fizzBuzz = new FizzBuzz(1, 100);
+
+    let numbers = fizzBuzz.getNumbers();
+
+    expect(numbers[3]).toBe(4);
+  });
 });
