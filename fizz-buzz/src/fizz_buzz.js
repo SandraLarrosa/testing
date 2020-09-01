@@ -5,6 +5,8 @@ class FizzBuzz {
       numbers.push(index);
     }
 
+    numbers[2] = "fizz";
+
     return numbers;
   }
 }

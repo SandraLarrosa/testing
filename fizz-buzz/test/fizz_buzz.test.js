@@ -33,4 +33,13 @@ describe('FizzBuzz', function () {
 
     expect(numbers.length).toBe(100);
   });
+
+  
+  it('return name fizz position 3', function () {
+    let fizzBuzz = new FizzBuzz(1, 100);
+
+    let numbers = fizzBuzz.getNumbers();
+
+    expect(numbers[2]).toBe('fizz');
+  });
 });
