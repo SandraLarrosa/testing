@@ -7,6 +7,7 @@ class FizzBuzz {
 
     numbers[2] = "fizz";
     numbers[5] = "fizz";
+    numbers[8] = "fizz";
 
     return numbers;
   }

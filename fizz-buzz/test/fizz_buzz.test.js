@@ -50,4 +50,13 @@ describe('FizzBuzz', function () {
 
     expect(numbers[5]).toBe('fizz');
   });
+
+
+  it('return name fizz position 9', function () {
+    let fizzBuzz = new FizzBuzz(1, 100);
+
+    let numbers = fizzBuzz.getNumbers();
+
+    expect(numbers[8]).toBe('fizz');
+  });
 });
