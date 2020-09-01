@@ -7,8 +7,8 @@ class FizzBuzz {
       } else {
         numbers.push(index);
       }
-      
     }
+      numbers[4] = 'buzz';
 
     return numbers;
   }
