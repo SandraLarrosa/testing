@@ -8,7 +8,7 @@ class FizzBuzz {
     for (let index = 1; index < 101; index++) {
       if (index % 15 === 0 || index === 35 || index === 53  || index === 57) {
         numbers.push('fizzbuzz');
-      } else if (index % 5 === 0 || index === 56 || index === 52 || index === 54) {
+      } else if (index % 5 === 0 || index.toString().includes('5')) {
         numbers.push('buzz');
       } else if (index % 3 === 0 || index.toString().includes('3')) {
         numbers.push('fizz');
