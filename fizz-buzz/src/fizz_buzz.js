@@ -2,7 +2,7 @@ class FizzBuzz {
   getNumbers() {
     let numbers = [];
     for (let index = 1; index < 101; index++) {
-      if (index === 15 || index === 30 || index === 45) {
+      if (index % 15 === 0) {
         numbers.push('fizzbuzz');
       } else if (index % 3 === 0) {
         numbers.push('fizz');
