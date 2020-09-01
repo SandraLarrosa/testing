@@ -153,7 +153,7 @@ describe('FizzBuzz', function () {
 
     let numbers = fizzBuzz.getNumbers();
 
-    expect(numbers[53]).toBe('buzz');
+    expect(numbers[53]).toBe('fizzbuzz');
     
   });
 
