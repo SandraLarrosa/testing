@@ -83,11 +83,20 @@ describe('FizzBuzz', function () {
 
     expect(numbers[19]).toBe('buzz');
   });
+
   it('return name buzz position 15', function () {
     let fizzBuzz = new FizzBuzz(1, 100);
 
     let numbers = fizzBuzz.getNumbers();
 
     expect(numbers[14]).toBe('fizzbuzz');
+  });
+
+  it('return name buzz position 30', function () {
+    let fizzBuzz = new FizzBuzz(1, 100);
+
+    let numbers = fizzBuzz.getNumbers();
+
+    expect(numbers[29]).toBe('fizzbuzz');
   });
 });
