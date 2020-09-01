@@ -1,7 +1,7 @@
 class FizzBuzz {
   getNumbers() {
       let numbers = [];
-      for (let index = 1; index < 5; index++) {
+      for (let index = 1; index < 101; index++) {
           numbers.push(index);
       }
       
