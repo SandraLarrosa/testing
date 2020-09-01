@@ -9,7 +9,7 @@ describe('FizzBuzz', function () {
     expect(numbers[0]).toBe(1);
   });
 
-  it('return a number between 2 numbers', function () {
+  it('return number 2', function () {
     let fizzBuzz = new FizzBuzz(1, 100);
 
     let numbers = fizzBuzz.getNumbers();

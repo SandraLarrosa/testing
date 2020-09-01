@@ -1,6 +1,11 @@
 class FizzBuzz {
   getNumbers() {
-    return [1, 2,0, 4];
+      let numbers = [];
+      for (let index = 1; index < 5; index++) {
+          numbers.push(index);
+      }
+      
+    return numbers;
   }
 }
 
