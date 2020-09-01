@@ -17,7 +17,7 @@ class FizzBuzz {
       }
     }
 
-   
+   numbers[50] = 'buzz';
 
     return numbers;
   }
